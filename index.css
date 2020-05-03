@@ -1,0 +1,133 @@
+body,html {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  background: #f2f2f2;
+  font-size: 16px;
+}
+header {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('history.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+header .text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: #fff;
+  width: 60%;
+}
+nav {
+  display: flex;
+}
+nav h4 {
+  flex: 1;
+}
+nav li {
+  margin-top: 25px;
+  flex: 1;
+  float: right;
+  list-style: none;
+}
+.space {
+  margin-top: 10rem;
+}
+li {
+  list-style: upper-alpha;
+}
+.correct {
+  background: green;
+  color: #fff;
+  padding: 2px 10px;
+}
+.wrong {
+  background: red;
+  color: #fff;
+  padding: 2px 10px;
+}
+@media (min-width: 720px) {
+  #quizPage {
+    background: #fff;
+    width: 50%;
+    min-height: 30vh;
+    margin: 7rem auto;
+    display: flex;
+    position: relative;
+  }
+}
+#instanciate {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 15px;
+  background-color: #059695;
+  color: #fff;
+  border-radius: 0%;
+  border: 1px solid #059695;
+}
+.card {
+  width: 100%;
+}
+.buttons {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+}
+
+.showResult {
+  background-color: grey;
+  color: #fff;
+  border-radius: 0%;
+  border: none;
+  width: 20%;
+  margin: 10px;
+  height: 50px;
+  float: left;
+}
+@media (max-width: 720px) {
+  body,html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+  }
+  #quizPage {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .buttons {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+  }
+  .showResult {
+    background-color: grey;
+    color: #fff;
+    border-radius: 0%;
+    border: none;
+    width: 40%;
+    margin: 5%;
+    height: 40px;
+    float: left;
+  }
+  #showAnswer {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 10%;
+  }
+  #instanciate {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    background-color: #059695;
+    color: #fff;
+    border-radius: 0%;
+    border: 1px solid #059695;
+  }
+}

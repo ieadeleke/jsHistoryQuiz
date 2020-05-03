@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <h4>Pop Quiz</h4>
+  </nav>
+  <header>
+      <div class="text">
+        <h3>Welcome to Pop History Quiz</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio, natus.</p>
+      </div>    
+  </header>
+
+
+  <div id="quizPage">
+    <button onclick="clickMe()" id="instanciate">Start Quiz</button>
+    <div id="showAnswer"></div>
+
+    <div class="clear"></div>
+      <div id="card" class="card">
+        <small><span id="questionCount"></span></small>
+    <br><br>
+          <form action="">
+            <div class="form-group">
+              <label for="" id="question"> <span id="questionBox"></span></label>
+              <div for="" class="option"></div>
+            </div>
+          </form>
+      </div>
+      <br>
+      <div class="buttons">
+        <button onClick="clickMe()" class="showResult" id="showNext">Next Question</button>
+        <button onClick="showResult()" class="showResult" id="showResult" style="background-color: green;">Result</button>
+
+      </div>
+  </div>
+  <div class="space"></div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
